@@ -149,8 +149,8 @@ export default class FlipView extends Component {
     if (Platform.OS === 'android') {
       animations = [
         ...animations,
-        this._animateValue(this.state.frontOpacityAnimatedValue, frontOpacity, this.props.flipEasing, 100),
-        this._animateValue(this.state.backOpacityAnimatedValue, backOpacity, this.props.flipEasing, 100)
+        this._animateValue(this.state.frontOpacityAnimatedValue, frontOpacity, this.props.flipEasing),
+        this._animateValue(this.state.backOpacityAnimatedValue, backOpacity, this.props.flipEasing)
       ];
     }
 
